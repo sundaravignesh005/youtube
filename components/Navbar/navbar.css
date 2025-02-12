@@ -1,0 +1,109 @@
+.ot{
+    color: rgb(255, 96, 4);
+}
+
+:root{
+    --whiteColorDeam: hsl(0,0%,93%);
+    --PrimaryColor : hsl(199,100%,33%);
+    --blackColor:hsl(201,33%,16%);
+    --gradientColor:linear-gradient(to right,hsl(187,85%,43%)hsl(199,100%,33%));
+    --cardBG:rgb(225,225,235);
+    --SecondaryColor:hsl(187,85%,43%);
+    --bodyColor:rgb(240,225,235);
+    --textcolor:hsl(240,4%,36%);
+    --inputColor:rgb(239,239,239);
+    --greyText:rgb(190,190,190);
+}  
+.vijay{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    column-gap: 100px;
+    justify-content: space-between;
+    width: 100%;
+    padding:1rem;
+    z-index: 1000;
+    --box-shadow:.0 2px 4px rgba(0, 0, 0, 0.242);
+    color: black;
+
+
+     .logo{
+        color: var(--whiteColor);
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        cursor: pointer;
+        padding-right: 500px;
+        color: rgb(255, 255, 255);
+        font-size: 15px;
+
+        .icon{
+            font-size: 30px;
+            cursor: pointer;
+            color: var(--cardBG);
+            transform: translateY(5px);
+        
+    }}
+@media screen and (max-Width:768px){
+    .navBar{
+        position: absolute;
+        padding: 1rem;
+        background:var(--whiteColorDeam);
+        height: max-content;
+        width: 80%;
+        border-radius: 1rem;
+        top: -500rem;
+        left: 50%;
+        transform: translate(-50%);
+        z-index: 2000;
+        color: white;
+
+
+
+        .navLists{
+            flex-direction: column;
+            justify-content: center;
+          margin: auto;
+            width: 100%;
+            padding: .5rem 0;
+            row-gap: 50px;
+
+
+
+            
+            .navItem{
+                padding: .5rem 0;
+                color: azure;
+
+                .navLink{
+                    font-size: .9rem;
+                    font-weight: 600;
+                    color: white;
+                
+
+
+
+                   &:hover{
+                        color:rgb(255, 255, 255);
+              }
+            }
+          }
+          .btn{
+            margin-top: 1rem;
+            transition: transform 0.7s ease;
+            transform: translateY(5px);
+        
+            a{
+                font-weight: 600;
+                color: var(--whiteColor)
+            }
+          }
+       }
+       
+     }
+
+     .activeNavbar{
+        top: 7rem;
+     }
+  }
+  }
